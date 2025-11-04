@@ -26,12 +26,12 @@ public class Usuario {
 
     @NotBlank
     @Size(min = 3)
-    @Pattern(regexp = "^[a-zA-Z]+$", message = "No se permiten números")
+    @Pattern(regexp = "^[a-zA-Z ]+$", message = "Solo letras y espacios")
     private String nombre;
 
     @NotBlank
     @Size(min = 3)
-    @Pattern(regexp = "^[a-zA-Z]+$", message = "No se permiten números")
+    @Pattern(regexp = "^[a-zA-Z ]+$", message = "Solo letras y espacios")
     private String apellido;
 
     @Past
